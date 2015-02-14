@@ -10,3 +10,9 @@ C:\Users\Z\Documents\GitHub\C-SharpTest\obj\Debug\C-SharpTest.pdb
 C:\Users\Z\Documents\GitHub\C-SharpTest\bin\Debug\C-SharpTest.exe
 C:\Users\Z\Documents\GitHub\C-SharpTest\bin\Debug\C-SharpTest.pdb
 C:\Users\Z\Documents\GitHub\C-SharpTest\obj\Debug\C-SharpTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\bin\Debug\C-SharpTest.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\obj\Debug\C-SharpTest.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\obj\Debug\C-SharpTest.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\bin\Debug\C-SharpTest.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\bin\Debug\C-SharpTest.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\C-SharpTest\obj\Debug\C-SharpTest.csprojResolveAssemblyReference.cache

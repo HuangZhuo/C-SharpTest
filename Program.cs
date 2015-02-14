@@ -10,11 +10,12 @@ namespace C_SharpTest
     {
         static void Main(string[] args)
         {
-            var handle = new Program();
-            handle.Test1();
+            var handle = new DelegateTest();
+            handle.Invoke();
+                        
         }
 
-        void Test1()
+        void Invoke()
         {
             Console.WriteLine("hello");
         }

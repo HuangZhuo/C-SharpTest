@@ -10,7 +10,7 @@ namespace C_SharpTest
     delegate int TwoIntsOp(int a, int b);
 
     // PDF_159
-    public class DelegateTest
+    public class DelegateTest : TestInterface
     {
         int mCounts = 100;
 

@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace C_SharpTest
 {
-    class Program
+    class Program : TestInterface
     {
         static void Main(string[] args)
         {
-            var handle = new DelegateTest();
+            TestInterface handle = new Program();
             handle.Invoke();
-                        
         }
 
-        void Invoke()
+        public void Invoke()
         {
             Console.WriteLine("hello");
         }

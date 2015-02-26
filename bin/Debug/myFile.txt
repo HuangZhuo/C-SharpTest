@@ -1,0 +1,1 @@
+https://msdn.microsoft.com/zh-cn/library/system.io.filestream(v=vs.110).aspx

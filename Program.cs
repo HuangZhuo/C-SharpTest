@@ -10,13 +10,17 @@ namespace C_SharpTest
     {
         static void Main(string[] args)
         {
-            TestInterface handle = new IOTest();
+            TestInterface handle = new DelegateTest();
             handle.Invoke();
         }
 
         public void Invoke()
         {
-            Console.WriteLine("hello");
+            //Console.WriteLine("hello");
+            int i = 1;
+            object o = i;
+
+            i = (int)o;
         }
     }
 }

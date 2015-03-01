@@ -18,7 +18,7 @@ namespace C_SharpTest
         {
             // read file
             FileStream fs = new FileStream("myFile.txt", FileMode.OpenOrCreate);
-            String text = @"https://msdn.microsoft.com/zh-cn/library/system.io.filestream(v=vs.110).aspx";
+            string text = @"https://msdn.microsoft.com/zh-cn/library/system.io.filestream(v=vs.110).aspx";
             byte[] buff = System.Text.Encoding.UTF8.GetBytes(text);
             fs.Write(buff, 0, buff.Length);
             fs.Close();

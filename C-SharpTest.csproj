@@ -45,6 +45,7 @@
     <Compile Include="Grammar\IOTest.cs" />
     <Compile Include="Grammar\TestInterface.cs" />
     <Compile Include="Grammar\ThreadTest.cs" />
+    <Compile Include="Grammar\XMLTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

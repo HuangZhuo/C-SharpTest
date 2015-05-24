@@ -10,7 +10,7 @@ namespace C_SharpTest
     {
         static void Main(string[] args)
         {
-            TestInterface handle = new ThreadTest();
+            TestInterface handle = new ADTEST();
             handle.Invoke();
         }
 

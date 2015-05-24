@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADT\ADTEST.cs" />
+    <Compile Include="ADT\SimpleStack.cs" />
     <Compile Include="Grammar\DelegateTest.cs" />
     <Compile Include="Grammar\IOTest.cs" />
     <Compile Include="Grammar\TestInterface.cs" />

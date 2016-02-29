@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace C_SharpTest
 {
     class Program : TestInterface
     {
         static void Main(string[] args)
         {
-            TestInterface handle = new SerializationTest();
+            TestInterface handle = new Net1();
             handle.Invoke();
+
+            System.Console.Read();
         }
 
         public void Invoke()
@@ -21,6 +18,8 @@ namespace C_SharpTest
             object o = i;
 
             i = (int)o;
+
+
         }
     }
 }

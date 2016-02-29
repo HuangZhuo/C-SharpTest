@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCDD7EC5-BD06-4810-ACD5-1686142709CD}</ProjectGuid>
+    <ProjectGuid>{A23E8A48-E7BB-4A17-8BB2-BC9861216623}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>C_SharpTest</RootNamespace>
-    <AssemblyName>C-SharpTest</AssemblyName>
+    <RootNamespace>ServerSocket</RootNamespace>
+    <AssemblyName>ServerSocket</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,18 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADT\ADTEST.cs" />
-    <Compile Include="ADT\SimpleStack.cs" />
-    <Compile Include="Grammar\DelegateTest.cs" />
-    <Compile Include="Grammar\IOTest.cs" />
-    <Compile Include="Grammar\Serialization.cs" />
-    <Compile Include="Grammar\TestInterface.cs" />
-    <Compile Include="Grammar\ThreadTest.cs" />
-    <Compile Include="Grammar\TimerTest.cs" />
-    <Compile Include="Grammar\XMLTest.cs" />
-    <Compile Include="Network\AsynchronousClient .cs" />
-    <Compile Include="Network\Net1.cs" />
-    <Compile Include="Network\SynchronousSocketClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

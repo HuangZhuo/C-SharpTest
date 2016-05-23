@@ -44,6 +44,7 @@
     <Compile Include="ADT\ADTEST.cs" />
     <Compile Include="ADT\SimpleStack.cs" />
     <Compile Include="Grammar\DelegateTest.cs" />
+    <Compile Include="Grammar\FSM.cs" />
     <Compile Include="Grammar\IOTest.cs" />
     <Compile Include="Grammar\Serialization.cs" />
     <Compile Include="Grammar\TestInterface.cs" />

@@ -10,10 +10,8 @@ namespace C_SharpTest
 
         static void Main(string[] args)
         {
-            System.Console.Write("Main");
-
-            //TestInterface handle = new Net1();
-            //handle.Invoke();
+            TestInterface handle = new FSMTest();
+            handle.Invoke();
 
             System.Console.Read();
         }

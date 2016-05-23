@@ -47,7 +47,7 @@ namespace C_SharpTest
 
             Console.WriteLine(f4.GetInvocationList().Length); // 获取迭代方法列表，输出3。用处：手动迭代，每次迭代捕获异常，让循环继续进行。
 
-            TwoIntsOp f5 = delegate(int a, int b) { Console.WriteLine(str); return 0; }; // 试用匿名方法，并在访问匿名方法外面定义的变量。
+            TwoIntsOp f5 = delegate (int a, int b) { Console.WriteLine(str); return 0; }; // 试用匿名方法，并在访问匿名方法外面定义的变量。
             f5(5, 6); // 匿名方法和lambda表达式对于编译器生成的IL（中间语言）是一样的？
         }
 
@@ -65,7 +65,14 @@ namespace C_SharpTest
         // 事件：.NET把Windows消息封装在事件中，并让用户无需理解底层的委托。
         void Test3()
         {
+            var test = new EventTest();
+            test.onInvoke += Test_onInvoke; //向EventTest注册一个消息
+        }
 
+        private void Test_onInvoke(object sender, EventArgs e)
+        {
+            // 收到消息之后的处理
+            EventTest et = sender as EventTest;
         }
 
         void foo(object obj) { Console.WriteLine(obj.ToString()); }
@@ -77,11 +84,22 @@ namespace C_SharpTest
 
         public int blabla(int a, int b)
         {
-            throw new Exception(">_<");
+            throw new Exception(">_<"); 
+        }
+    }
+
+    public class EventTest : TestInterface
+    {
+        public event EventHandler onInvoke; // 事件比传统的委托多了event关键字，本质还是一个多播委托。另外事件定义在类内部。
+
+        public void Invoke()
+        {
+            if (onInvoke != null)
+                onInvoke(this, null); // 消息广播
         }
     }
 
 }
 // 定义委托，类似于用typedef定义一个新类型。
 // 对象是类的实例，而委托的实例仍然叫做委托。委托的含义要通过上下文确定:)
-// 
+// 事件就像是C#对观察者模式提供的原生支持

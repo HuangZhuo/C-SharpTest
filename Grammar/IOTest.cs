@@ -29,6 +29,20 @@ namespace C_SharpTest
             fs.Read(buff, 0, 1024);
             Console.WriteLine(System.Text.Encoding.UTF8.GetString(buff));
             fs.Close();
+
+
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            string fileName = "";
+            using (var st = File.Open(fileName, FileMode.OpenOrCreate))
+            {
+                stopwatch.Start();
+            }
+
+            // streamReader:方便用来处理文本文件
+            var sr= File.OpenText("myFile.txt");
+            sr.ReadToEnd();
+
+
         }
     }
 }

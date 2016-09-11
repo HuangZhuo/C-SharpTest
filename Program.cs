@@ -5,12 +5,12 @@ namespace C_SharpTest
     {
         static Program()
         {
-            System.Console.Write("hello");
+            System.Console.WriteLine("Test Begin");
         }
 
         static void Main(string[] args)
         {
-            TestInterface handle = new FSMTest();
+            TestInterface handle = new JsonTest();
             handle.Invoke();
 
             System.Console.Read();
@@ -23,6 +23,11 @@ namespace C_SharpTest
             object o = i;
 
             i = (int)o;
+        }
+
+        public static void Print(string str)
+        {
+            System.Console.WriteLine(str);
         }
     }
 }

@@ -43,9 +43,19 @@
   <ItemGroup>
     <Compile Include="ADT\ADTEST.cs" />
     <Compile Include="ADT\SimpleStack.cs" />
+    <Compile Include="Framework\LitJson\IJsonWrapper.cs" />
+    <Compile Include="Framework\LitJson\JsonData.cs" />
+    <Compile Include="Framework\LitJson\JsonException.cs" />
+    <Compile Include="Framework\LitJson\JsonMapper.cs" />
+    <Compile Include="Framework\LitJson\JsonMockWrapper.cs" />
+    <Compile Include="Framework\LitJson\JsonReader.cs" />
+    <Compile Include="Framework\LitJson\JsonWriter.cs" />
+    <Compile Include="Framework\LitJson\Lexer.cs" />
+    <Compile Include="Framework\LitJson\ParserToken.cs" />
     <Compile Include="Grammar\DelegateTest.cs" />
     <Compile Include="Grammar\FSM.cs" />
     <Compile Include="Grammar\IOTest.cs" />
+    <Compile Include="Grammar\JsonTest.cs" />
     <Compile Include="Grammar\Serialization.cs" />
     <Compile Include="Grammar\TestInterface.cs" />
     <Compile Include="Grammar\ThreadTest.cs" />
